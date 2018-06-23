@@ -1,0 +1,12 @@
+name: role-assignment
+icon: flask
+listed: false
+
+fields:
+  role:
+    type: networq:holacracy:role
+  partner:
+    type: networq:holacracy:partner
+  focus:
+    type: string
+    

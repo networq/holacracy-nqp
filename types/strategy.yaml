@@ -1,0 +1,9 @@
+name: strategy
+
+icon: check
+listed: false
+parent: circle # breadcrumbs
+
+fields:
+  circle:
+    type: networq:holacracy:circle

@@ -1,0 +1,19 @@
+<ul class="list-group">
+  {% for role in node['networq:holacracy:circle']['roles'] %}
+
+    <li class="list-group-item">
+        <h3>{{ role['networq:core:node']['name']}}</h3>
+        {{ role|nodeButton|raw }}<br />
+        Filled by:<br />
+        <ul>
+        {% for a in role['networq:holacracy:role']['role-assignments'] %}
+            <li>{{ a['networq:holacracy:role-assignment']['partner']['networq:core:node']['name'] }}
+                <i>
+                    for {{ a['networq:holacracy:role-assignment']['focus'] }}
+                </i>
+            </li>
+        {% endfor %}
+        </ul>
+    </li>
+  {% endfor %}
+</ul>

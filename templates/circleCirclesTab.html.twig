@@ -1,0 +1,9 @@
+<ul class="list-group">
+  {% for circle in node['networq:holacracy:circle']['circles'] %}
+
+    <li class="list-group-item">
+        <h3>{{ circle['networq:core:node']['name']}}</h3>
+        {{ circle|nodeButton|raw }}
+    </li>
+  {% endfor %}
+</ul>

@@ -1,0 +1,15 @@
+networq:core:node:
+  name: Acme Inc
+  description: Example company
+  image: https://vignette.wikia.nocookie.net/looneytunes/images/5/56/Comp_2.jpg/revision/latest?cb=20121102161419
+  url: https://en.wikipedia.org/wiki/Acme_Corporation
+  details: |
+    The ACME Corporation is a company that is featured in the Looney Tunes franchise, especially various Road Runner cartoons. The name means A Company that Makes Everything, which is what the company is all about.
+
+    They produce anything and everything anyone could imagine, and even what you couldn't imagine. Their products range from ordinary products such as anvils to more extravagant things such as disintegrator guns. However, it is not always that the products will serve their purpose.
+
+    In fact, they tend to fail catastrophically, and at the worst times possible. Although the quality of their products is dubious, their delivery services are top notch: you can post a receipt in the mailbox, wherever you are in the world, and the package will arrive in less than 5 seconds. 
+
+networq:organization:organization: ~
+
+networq:holacracy:circle: ~

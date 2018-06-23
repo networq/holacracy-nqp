@@ -1,0 +1,31 @@
+name: networq:holacracy
+description: Holacracy types
+license: MIT
+
+dependencies:
+  networq:core: master
+  networq:organization: master
+
+navNodes:
+  - networq:holacracy:acme
+
+widgets:
+  circleProperties:
+    type: networq:holacracy:circle
+    hook: properties
+    label: Circle properties
+
+  circleRolesTab:
+    type: networq:holacracy:circle
+    hook: tabs
+    label: Roles
+
+  partnerRolesTab:
+    type: networq:holacracy:partner
+    hook: tabs
+    label: Roles
+
+  circleCirclesTab:
+    type: networq:holacracy:circle
+    hook: tabs
+    label: Circles

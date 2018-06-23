@@ -1,0 +1,8 @@
+name: partner
+icon: user
+
+fields:
+  role-assignments:
+    type: networq:holacracy:role-assignment[]
+    reverse: partner
+    

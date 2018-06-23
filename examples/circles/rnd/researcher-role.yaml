@@ -1,0 +1,6 @@
+networq:core:node:
+  name: Researcher role
+  description: Researches stuff
+ 
+networq:holacracy:role:
+  circle: networq:holacracy:rnd

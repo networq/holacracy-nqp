@@ -1,0 +1,21 @@
+networq:core:node:
+  name: Elmer Fudd
+  description: Shh! Be vewy, vewy quiet. I'm huntin' wabbits!
+  image: https://upload.wikimedia.org/wikipedia/en/0/05/Elmer_in_Rabbit_Fire_%281951%29.png
+  url: https://en.wikipedia.org/wiki/Elmer_Fudd
+  
+networq:organization:member:
+  memberships:
+    ~elmer:
+      networq:organization:membership:
+        member: networq:holacracy:elmer
+        group: networq:holacracy:rnd
+
+networq:holacracy:partner:
+  role-assignments:
+    ~elmer_role:
+      networq:holacracy:role-assignment:
+        partner: networq:holacracy:elmer
+        role: networq:holacracy:researcher-role
+        focus: Rabbits
+

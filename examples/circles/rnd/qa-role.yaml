@@ -1,0 +1,6 @@
+networq:core:node:
+  name: Quality Assurance role
+  description: Makes sure the prototypes are tested for quality
+  
+networq:holacracy:role:
+  circle: networq:holacracy:rnd

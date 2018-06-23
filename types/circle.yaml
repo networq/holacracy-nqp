@@ -1,0 +1,20 @@
+name: circle
+labelPlural: Circles
+labelSingular: Circle
+
+icon: circle
+
+fields:
+  purpose:
+    type: string
+  circle:
+    type: networq:holacracy:circle
+  circles:
+    type: networq:holacracy:circle[]
+    reverse: circle
+  roles:
+    type: networq:holacracy:role[]
+    reverse: circle
+  strategies:
+    type: networq:holacracy:strategy[]
+    reverse: circle

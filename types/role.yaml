@@ -1,0 +1,12 @@
+name: role
+
+icon: pied-piper-hat
+
+parent: circle # breadcrumbs
+
+fields:
+  circle:
+    type: networq:holacracy:circle
+  role-assignments:
+    type: networq:holacracy:role-assignment[]
+    reverse: role

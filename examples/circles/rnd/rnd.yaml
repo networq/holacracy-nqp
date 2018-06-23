@@ -1,0 +1,10 @@
+networq:core:node:
+  name: R&D Circle
+  description: Research and development
+  image: http://www.electricalindia.in/uploads/2253/RD%20icon.jpg
+
+networq:organization:group: ~
+
+networq:holacracy:circle:
+  purpose: Research new products to develop
+  circle: networq:holacracy:acme
