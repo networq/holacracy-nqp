@@ -3,8 +3,8 @@ description: Holacracy types
 license: MIT
 
 dependencies:
-  networq:core: master
-  networq:organization: master
+  networq:core: latest
+  networq:organization: latest
 
 navNodes:
   - networq:holacracy:acme
