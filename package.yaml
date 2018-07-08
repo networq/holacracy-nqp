@@ -28,4 +28,5 @@ widgets:
   circleCirclesTab:
     type: networq:holacracy:circle
     hook: tabs
+    label: Sub Circles
     label: Circles
