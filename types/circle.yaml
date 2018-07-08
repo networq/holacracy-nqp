@@ -5,8 +5,6 @@ labelSingular: Circle
 icon: circle
 
 fields:
-  purpose:
-    type: string
   circle:
     type: networq:holacracy:circle
   circles:

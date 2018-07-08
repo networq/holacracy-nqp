@@ -1,0 +1,13 @@
+<ul class="list-group">
+  {% for assignment in node['networq:holacracy:role']['role-assignments'] %}
+
+    <li class="list-group-item">
+        <h3>{{ assignment['networq:holacracy:role-assignment']['partner']['networq:core:node']['name']}}</h3>
+        {{ assignment['networq:holacracy:role-assignment']['partner']|nodeButton|raw }}<br />
+
+        {% if assignment['networq:holacracy:role-assignment']['focus'] %}
+        Focus: {{ assignment['networq:holacracy:role-assignment']['focus'] }}<br />
+        {% endif %}
+    </li>
+  {% endfor %}
+</ul>

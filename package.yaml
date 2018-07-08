@@ -10,6 +10,11 @@ navNodes:
   - networq:holacracy:acme
 
 widgets:
+  roleGuide:
+    type: networq:holacracy:role
+    hook: reports
+    label: Role guide
+    
   circleProperties:
     type: networq:holacracy:circle
     hook: properties
@@ -29,4 +34,18 @@ widgets:
     type: networq:holacracy:circle
     hook: tabs
     label: Sub Circles
-    label: Circles
+
+  roleAccountabilitiesTab:
+    type: networq:holacracy:role
+    hook: tabs
+    label: Accountabilities
+  
+  roleAssignmentsTab:
+    type: networq:holacracy:role
+    hook: tabs
+    label: Assignments
+
+  roleProperties:
+    type: networq:holacracy:role
+    hook: properties
+    label: Role properties

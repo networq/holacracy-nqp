@@ -4,16 +4,29 @@
     <li class="list-group-item">
         <h3>{{ role['networq:core:node']['name']}}</h3>
         {{ role|nodeButton|raw }}<br />
+
+        {% if role['networq:holacracy:role']['role-assignments']|length > 0 %}
         Filled by:<br />
         <ul>
         {% for a in role['networq:holacracy:role']['role-assignments'] %}
-            <li>{{ a['networq:holacracy:role-assignment']['partner']['networq:core:node']['name'] }}
-                <i>
-                    for {{ a['networq:holacracy:role-assignment']['focus'] }}
-                </i>
+            <li>
+                <div style="clear: both; margin-bottom: 10px;">
+                    <img style="float: left;  width: 32px; margin-right: 10px; margin-bottom: 10px" src="{{ a['networq:holacracy:role-assignment']['partner']['networq:core:node']['image']}}" />
+                    <a href="{{ a['networq:holacracy:role-assignment']['partner']|nodePath }}">
+                        {{ a['networq:holacracy:role-assignment']['partner']['networq:core:node']['name'] }}
+                    </a>
+                    {% if a['networq:holacracy:role-assignment']['focus'] %}
+                    <i>
+                        for {{ a['networq:holacracy:role-assignment']['focus'] }}
+                    </i>
+                    {% endif %}
+                </div>
             </li>
         {% endfor %}
         </ul>
+        {% else %}
+            <span style="color: red">Unfilled</span>
+        {% endif %}
     </li>
   {% endfor %}
 </ul>

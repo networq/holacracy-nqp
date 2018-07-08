@@ -1,0 +1,12 @@
+<ul>
+    <li>Purpose:<br />
+    {{ node['networq:holacracy:role']['purpose'] }}
+    </li>
+    {% if node['networq:holacracy:role']['circle'] %}
+    <li>Circle:<br />
+        <a href="{{ node['networq:holacracy:role']['circle']|nodePath }}">
+            {{ node['networq:holacracy:role']['circle']['networq:core:node']['name'] }}
+        </a>
+    </li>
+    {% endif %}
+</ul>

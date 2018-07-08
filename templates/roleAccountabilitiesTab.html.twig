@@ -1,0 +1,10 @@
+<ul class="list-group">
+  {% for accountability in node['networq:holacracy:role']['accountabilities'] %}
+
+    <li class="list-group-item">
+        <h3>{{ accountability['networq:core:node']['name'] }}</h3>
+        {{ accountability|nodeButton|raw }}<br />
+        <p>{{ accountability['networq:holacracy:accountability']['details'] }}
+    </li>
+  {% endfor %}
+</ul>

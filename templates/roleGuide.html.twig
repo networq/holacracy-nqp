@@ -1,0 +1,47 @@
+{% extends "report.html.twig" %}
+
+{% block navigation %}
+<div class="list-group">
+    <a href="#introduction" class="list-group-item">Introduction</a>
+    <a href="#purpose" class="list-group-item">Purpose</a>
+    <a href="#circle" class="list-group-item">Circle</a>
+    <a href="#accountabilities" class="list-group-item">Accountabilities</a>
+    <a href="#competencies" class="list-group-item">Competencies</a>
+    <a href="#domains" class="list-group-item">Domains</a>
+</div>
+{% endblock %}
+
+{% block content %}
+    <h1>Guide for the "{{ node['networq:core:node']['name'] }}" role</h1>
+
+    <p class="lead">This guide contains all the information you'll need to fill the "{{ node['networq:core:node']['name'] }}" role.</p>
+    <h2>Role purpose</h2>
+    <p>{{ node['networq:holacracy:role']['purpose']}}</p>
+
+    <h2>Circle: {{ node['networq:holacracy:role']['circle']['networq:core:node']['name'] }}</h2>
+    <p>This role is a part of the "{{ node['networq:holacracy:role']['circle']['networq:core:node']['name'] }}" circle.</p>
+
+
+    <h2>Accountabilities</h2>
+    <p>Fullfilling the "{{ node['networq:core:node']['name'] }}" role is associated with the following accountabilities:</p>
+    <ul>
+    {% for accountability in node['networq:holacracy:role']['accountabilities'] %}
+        <li>
+            <h5>{{ accountability['networq:core:node']['name']}}</h5>
+            <p>{{ accountability['networq:holacracy:accountability']['details']}}</p>
+        </li>
+    {% endfor %}
+    </ul>
+
+    <h2>Process actor</h2>
+    <p>This role participates as an actor in the following processes:</p>
+
+
+    <h2>Competencies</h2>
+    <p>This role requires the following competency proficiency levels:<p>
+
+
+    <h2>Domains</h2>
+    <p>This role has authority over the following domains:<p>
+
+{% endblock %}

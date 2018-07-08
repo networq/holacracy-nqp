@@ -1,0 +1,9 @@
+name: accountability
+labelPlural: Accountabilities
+labelSingular: Accountability
+
+fields:
+  description:
+    type: string
+  details:
+    type: string
